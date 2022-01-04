@@ -6,6 +6,5 @@ JOIN students
 ON students.id = student_id
 JOIN cohorts
 ON cohorts.id = cohort_id 
-GROUP BY teachers.name,cohorts.name
-HAVING cohorts.name = 'JUL02' 
-LIMIT 1;
+GROUP BY teachers.name, cohorts.name
+HAVING cohorts.name = 'JUL02' ;
